@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sample.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>丸罰ゲーム</h1>
+    <table border="1">
+        <tr>
+            <td class="cell" onclick="clickHear(this)" > </td>
+            <td class="cell" onclick="clickHear(this)"> </td>
+            <td class="cell" onclick="clickHear(this)"> </td>
+        </tr>
+        <tr>
+            <td class="cell" onclick="clickHear(this)"> </td>
+            <td class="cell" onclick="clickHear(this)"> </td>
+            <td class="cell" onclick="clickHear(this)"> </td>
+        </tr>
+        <tr>
+            <td class="cell" onclick="clickHear(this)"> </td>
+            <td class="cell" onclick="clickHear(this)"> </td>
+            <td class="cell" onclick="clickHear(this)"> </td>
+        </tr>
+    </table>
+    <script>
+        var cnt =0;
+    function clickHear(e){
+        if(cnt%2 ==0){
+            e.textContent ='○';
+        }
+        else{
+            e.textContent ='×';
+        }
+        cnt++;
+    }
+    </script>
+</body>
+</html>
